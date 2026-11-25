@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Omer Mujahid</title>
+  <meta name="description" content="Omer Mujahid — Associate Researcher at MICELAB, University of Girona. Digital twins, generative AI, and Type 1 Diabetes modeling." />
+
+  <style>
+    :root{
+      --bg:#ffffff; --text:#15171a; --muted:#5b6472; --border:#e8ebf0;
+      --card:#ffffff; --accent:#0b5bd3; --shadow:0 10px 28px rgba(0,0,0,0.08);
+      --radius:14px; --max:980px;
+    }
+    *{box-sizing:border-box;}
+    html{scroll-behavior:smooth;}
+    body{
+      margin:0; background:var(--bg); color:var(--text);
+      font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+      line-height:1.7;
+    }
+    a{color:var(--accent); text-decoration:none;}
+    a:hover{text-decoration:underline;}
+    .topbar{
+      position:sticky; top:0; z-index:20;
+      background:rgba(255,255,255,0.92); backdrop-filter:blur(10px);
+      border-bottom:1px solid var(--border);
+    }
+    .topbar-inner{
+      max-width:var(--max); margin:0 auto; padding:10px 18px;
+      display:flex; align-items:center; justify-content:space-between; gap:12px;
+    }
+    .brand{font-weight:650; letter-spacing:0.2px;}
+    .nav{display:flex; gap:12px; flex-wrap:wrap; justify-content:flex-end; font-size:14px;}
+    .nav a{color:var(--muted); padding:6px 8px; border-radius:10px;}
+    .nav a:hover{color:var(--text); background:#f4f6fa; text-decoration:none;}
+
+    .container{max-width:var(--max); margin:0 auto; padding:26px 18px 70px;}
+
+    .hero{
+      margin-top:22px; background:var(--card); border:1px solid var(--border);
+      border-radius:var(--radius); box-shadow:var(--shadow);
+      padding:22px;
+      display:grid; grid-template-columns:180px 1fr; gap:22px; align-items:center;
+    }
+    @media (max-width:720px){ .hero{grid-template-columns:1fr; text-align:center;} }
+
+    .avatar{
+      width:170px; height:170px; border-radius:50%; object-fit:cover;
+      border:1px solid var(--border);
+      box-shadow:0 6px 18px rgba(0,0,0,0.12);
+      background:#f3f5f8; display:block; margin:0 auto;
+    }
+
+    h1{margin:0 0 6px 0; font-size:32px; line-height:1.15; letter-spacing:-0.4px;}
+    h2{margin:0 0 10px 0; font-size:18px; letter-spacing:-0.2px;}
+    .subtitle{margin:0 0 10px 0; color:var(--muted); font-size:15px;}
+    .tagline{margin:0 0 14px 0; font-size:15px;}
+
+    .chips{display:flex; gap:8px; flex-wrap:wrap; margin:10px 0 0 0; justify-content:flex-start;}
+    @media (max-width:720px){ .chips{justify-content:center;} }
+    .chip{
+      font-size:12px; padding:6px 10px; border-radius:999px;
+      border:1px solid var(--border); background:#fbfcfe; color:#2a3240;
+    }
+
+    .btnrow{display:flex; gap:10px; flex-wrap:wrap; margin-top:14px;}
+    @media (max-width:720px){ .btnrow{justify-content:center;} }
+    .btn{
+      display:inline-flex; align-items:center; justify-content:center;
+      padding:9px 12px; border-radius:12px; border:1px solid var(--border);
+      color:var(--text); background:#fff; font-size:14px; text-decoration:none;
+    }
+    .btn:hover{ text-decoration:none; border-color:#d7ddea; background:#f7f9fc; }
+    .btn-primary{ background:var(--accent); color:#fff; border-color:transparent; }
+    .btn-primary:hover{ background:#094fb8; }
+
+    .muted{color:var(--muted);}
+    .small{font-size:14px;}
+    .card{
+      background:var(--card); border:1px solid var(--border);
+      border-radius:var(--radius); padding:18px;
+    }
+    section{margin-top:22px;}
+    .grid{display:grid; grid-template-columns:1fr 1fr; gap:14px;}
+    @media (max-width:860px){ .grid{grid-template-columns:1fr;} }
+    ul{margin:10px 0 0 18px;}
+    li{margin:6px 0;}
+
+    .footer{margin-top:30px; color:var(--muted); font-size:13px; text-align:center;}
+  </style>
+</head>
+
+<body>
+  <div class="topbar">
+    <div class="topbar-inner">
+      <div class="brand">Omer Mujahid</div>
+      <nav class="nav" aria-label="Site navigation">
+        <a href="#index">Home</a>
+        <a href="#research">Research</a>
+        <a href="publications.html">Publications</a>
+        <a href="events.html">Events</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </div>
+
+  <main class="container">
+    <!-- HERO -->
+    <header class="hero">
+      <img class="avatar" src="omer.jpeg" alt="Portrait of Omer Mujahid" />
+      <div>
+        <h1>Omer Mujahid</h1>
+        <p class="subtitle">Associate Researcher · MICELAB · University of Girona (UdG)</p>
+        <p class="tagline">
+          I work on <strong>digital twins</strong> and <strong>generative AI</strong> for personalized healthcare,
+          with a focus on <strong>metabolic</strong> simulation, prediction, and synthetic data generation.
+        </p>
+
+        <div class="chips" aria-label="Key topics">
+          <span class="chip">Digital Twins</span>
+          <span class="chip">Generative Deep Learning</span>
+          <span class="chip">Physiological Time Series</span>
+          <span class="chip">Synthetic Data</span>
+          <span class="chip">RAG</span>
+        </div>
+
+        <div class="btnrow" aria-label="Quick links">
+          <a class="btn btn-primary" href="CV_Omer.pdf">Download CV</a>
+          <a class="btn" href="https://orcid.org/0000-0001-9694-9621" target="_blank" rel="noopener">ORCID</a>
+        </div>
+      </div>
+    </header>
+
+    <!-- ABOUT -->
+    <section id="about">
+      <div class="card">
+        <h2>About</h2>
+        <p class="small">
+          I am an Associate Researcher at the University of Girona (MICELAB). I lead research activities on the
+          <strong>Personal Digital Twin</strong> initiative and contribute to translational work toward real-world deployment.
+         My research focuses on deep generative models to better understand and simulate the human metabolic system, with applications in diabetes healthcare and personalized medicine.
+        </p>
+
+        <div class="grid" style="margin-top:14px;">
+          <div>
+            <h2 style="font-size:16px; margin-bottom:8px;">Education</h2>
+            <ul class="small">
+              <li><strong>PhD</strong>, University of Girona (2020–2023) — Data-driven models for T1D using generative deep learning (Cum Laude)</li>
+              <li><strong>MSc Electrical Engineering</strong>, CECOS University (2014–2017)</li>
+              <li><strong>BSc Electrical Engineering</strong>, CECOS University (2009–2013)</li>
+            </ul>
+          </div>
+
+          <div>
+            <h2 style="font-size:16px; margin-bottom:8px;">Appointments</h2>
+            <ul class="small">
+              <li><strong>Research Director</strong>, University of Girona (Jun 2026–Present)</li>
+              <li><strong>Associate Researcher</strong>, University of Girona (Mar 2025– May 2026)</li>
+              <li><strong>Postdoctoral Researcher</strong>, University of Girona (Sep 2023–Mar 2025)</li>
+              <li><strong>Research Fellow</strong>, RAUN / WHO Ukraine (May 2021–Dec 2021)</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+      
+
+
+
+        <!-- RESEARCH -->
+    <section id="research">
+      <div class="card">
+        <h2>Research</h2>
+        <ul class="small">
+          <li>Data-based digital twins for diabetes and metabolic health</li>
+          <li>Generative models for physiological time series (conditional synthesis, plausibility constraints)</li>
+          <li>Hypoglycemia detection/prediction; HRV–CGM integration</li>
+          <li>Synthetic data augmentation for robust clinical AI</li>
+        </ul>
+
+        <p class="muted small" style="margin-top:10px;">
+          See the dedicated <a href="publications.html">publications page</a> for the full list.
+        </p>
+        <p class="small">
+          A downloadable PDF version of my CV is available here:
+          <a href="CV_Omer.pdf"><strong>CV_Omer.pdf</strong></a>.
+        </p>
+      </div>
+    </section>
+
+    <section id="awards">
+      <div class="card">
+        <h2>Awards & Funding</h2>
+        <ul class="small">
+            <li>FI Predoctoral Fellowship (Generalitat de Catalunya)</li>
+            <li>Indústria del Coneixement 2024 — Personal Digital Twin (Lead researcher)</li>
+            <li>Best Lab Engineer Award (CECOS University)</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- CONTACT (single, minimal) -->
+    <section id="contact">
+      <div class="card">
+        <h2>Contact</h2>
+        <p class="small" style="margin:0;">
+          <a href="mailto:omer.mujahid@udg.edu">omer.mujahid@udg.edu</a> ·
+          <a href="https://orcid.org/0000-0001-9694-9621" target="_blank" rel="noopener">ORCID</a> ·
+          <a href="https://www.linkedin.com/in/omer-mujahid" target="_blank" rel="noopener">LinkedIn</a><br>
+          Mobile: +34 632671443</a><br>
+          Office: The Research and Innovation Park of UdG – Narcís Monturiol Building, Office P2-A06, 17003 Girona, Spain
+        </p>
+      </div>
+    </section>
+
+    <div class="footer">
+      © <span id="year"></span> Omer Mujahid · Hosted on GitHub Pages
+    </div>
+  </main>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
