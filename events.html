@@ -1,332 +1,42 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Events & Talks — Omer Mujahid</title>
-
-  <style>
-    :root{
-      --bg:#ffffff; --text:#15171a; --muted:#5b6472; --border:#e8ebf0;
-      --card:#ffffff; --accent:#0b5bd3; --shadow:0 10px 28px rgba(0,0,0,0.08);
-      --radius:14px; --max:980px;
-    }
-    *{box-sizing:border-box;}
-    body{
-      margin:0; background:var(--bg); color:var(--text);
-      font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
-      line-height:1.7;
-    }
-    a{color:var(--accent); text-decoration:none;}
-    a:hover{text-decoration:underline;}
-
-    .topbar{
-      position:sticky; top:0; z-index:20;
-      background:rgba(255,255,255,0.92); backdrop-filter:blur(10px);
-      border-bottom:1px solid var(--border);
-    }
-    .topbar-inner{
-      max-width:var(--max); margin:0 auto; padding:10px 18px;
-      display:flex; align-items:center; justify-content:space-between;
-    }
-    .brand{font-weight:650;}
-    .nav{display:flex; gap:12px; font-size:14px;}
-    .nav a{color:var(--muted); padding:6px 8px; border-radius:10px;}
-    .nav a:hover{color:var(--text); background:#f4f6fa; text-decoration:none;}
-
-    .container{max-width:var(--max); margin:0 auto; padding:26px 18px 70px;}
-    .card{
-      background:var(--card);
-      border:1px solid var(--border);
-      border-radius:var(--radius);
-      box-shadow:var(--shadow);
-      padding:18px;
-      margin-top:18px;
-    }
-
-    h1{margin:0 0 6px 0; font-size:26px;}
-    h2{margin:0 0 10px 0; font-size:18px;}
-    .muted{color:var(--muted);}
-    .small{font-size:14px;}
-
-    .timeline{
-      position:relative;
-      margin-top:10px;
-      padding-left:18px;
-    }
-    .timeline:before{
-      content:"";
-      position:absolute;
-      left:7px;
-      top:0;
-      bottom:0;
-      width:2px;
-      background:var(--border);
-    }
-    .event{
-      position:relative;
-      padding:14px 14px 14px 22px;
-      border:1px solid var(--border);
-      border-radius:14px;
-      background:#fff;
-      margin:12px 0;
-    }
-    .event:before{
-      content:"";
-      position:absolute;
-      left:-6px;
-      top:18px;
-      width:12px;
-      height:12px;
-      border-radius:50%;
-      background:var(--accent);
-      box-shadow:0 0 0 4px #eef4ff;
-    }
-    .meta{
-      display:flex;
-      gap:10px;
-      flex-wrap:wrap;
-      margin-bottom:6px;
-    }
-    .date{
-      font-weight:650;
-      font-size:13px;
-      background:#f4f6fa;
-      border:1px solid var(--border);
-      padding:4px 8px;
-      border-radius:999px;
-    }
-    .tag{
-      font-size:12px;
-      border:1px solid var(--border);
-      padding:3px 8px;
-      border-radius:999px;
-      background:#fbfcfe;
-      color:var(--muted);
-    }
-    .title{font-weight:650; margin:0;}
-    .where{margin:4px 0 0 0; color:var(--muted);}
-    .upcoming .event{background:#fbfdff; border-color:#dbe7ff;}
-  </style>
-</head>
-
-<body>
-
-  <div class="topbar">
-    <div class="topbar-inner">
-      <div class="brand"><a href="index.html" style="color:inherit;text-decoration:none;">Omer Mujahid</a></div>
-      <nav class="nav">
-        <a href="index.html">Home</a>
-        <a href="index.html#research">Research</a>
-        <a href="publications.html">Publications</a>
-        <a href="events.html">Events</a>
-        <a href="index.html#contact">Contact</a>
-      </nav>
-    </div>
-  </div>
-
-  <main class="container">
-
-    <div class="card">
-      <h1>Events & Talks</h1>
-      <p class="muted small">Invited lectures, workshops, and conference presentations.</p>
-    </div>
-
-    <!-- ======================= -->
-    <!-- ===== UPCOMING ========= -->
-    <!-- ======================= -->
-
-    <div class="card upcoming">
-      <h2>Upcoming</h2>
-
-      <div class="timeline">
-
-        <!-- ===== START UPCOMING EVENT BLOCK ===== -->
-          <div class="event">
-            <div class="meta">
-              <span class="date">15 July 2026</span>
-              <span class="tag">Workshop</span>
-            </div>
-            <p class="title">From Population Models to Personalized Digital Twins: Adapting AI Models to Individuals</p>
-            <p class="where">
-              2nd Summer School on AI in Diabetes Healthcare,
-              University of Girona, Girona, Spain
-            </p>
-          </div>
-        <!-- ===== END UPCOMING EVENT BLOCK ===== -->
-
-
-        <!-- 
-        ===== TO ADD A NEW UPCOMING EVENT =====
-        1. Copy the START/END block above
-        2. Paste it below this comment
-        3. Edit date, tag, title, and location
-        -->
-
-
-      </div>
-    </div>
-
-
-    <!-- ======================= -->
-    <!-- ===== PAST EVENTS ===== -->
-    <!-- ======================= -->
-
-    <div class="card">
-      <h2>Past</h2>
-
-      <div class="timeline">
-        
-  
-
-        
-        
-        <!-- ===== START PAST EVENT BLOCK ===== -->   
-
-          <div class="event">
-            <div class="meta">
-              <span class="date">11-14 March 2026</span>
-              <span class="tag">Oral Presentation</span>
-            </div>
-            <p class="title">BUILDING DATA-BASED DIGITAL TWINS IN DIABETES WITH DEEP GENERATIVE MODELS: PROGRESS AND CHALLENGES</p>
-            <p class="where">
-              19th International Conference on Advanced Technologies & Treatments for Diabetes (ATTD 2026),
-              Barcelona, Spain
-            </p>
-          </div>
-        
-          <div class="event">
-            <div class="meta">
-              <span class="date">24 February 2026</span>
-              <span class="tag">User Group Session</span>
-            </div>
-            <p class="title">Inaugural Requirements Elicitation Session for the Advanced Virtual Human Twin (VHT) Platform</p>
-            <p class="where">
-              European Virtual Human Twins (VHT) User Group,
-              Brussels, Belgium / Online
-            </p>
-          </div>
-
-        <!-- ===== START PAST EVENT BLOCK ===== -->
-          <div class="event">
-            <div class="meta">
-              <span class="date">February 2026</span>
-              <span class="tag">Invited Lecture</span>
-            </div>
-            <p class="title">Artificial Intelligence in Precision Nutrition</p>
-            <p class="where">
-              International Conference on Precision Nutrition (Nutriome 2026),
-              Institute of Nutrigenetics
-            </p>
-          </div>
-          <!-- ===== END PAST EVENT BLOCK ===== -->
-
-        <!-- ===== START PAST EVENT BLOCK ===== -->
-          <div class="event">
-            <div class="meta">
-              <span class="date">December 2025</span>
-              <span class="tag">CPD Workshop</span>
-            </div>
-            <p class="title">Learning Representations for Biomedical Digital Twins using Generative AI</p>
-            <p class="where">
-              CECOS University 
-            </p>
-          </div>
-
-        
-          
-          <div class="event">
-            <div class="meta">
-              <span class="date">October 2025</span>
-              <span class="tag">Invited Lecture</span>
-            </div>
-            <p class="title">Artificial Intelligence in Diabetes</p>
-            <p class="where">
-              Workshop on “AI and Nutrigenetics of Diabetes Mellitus: Beyond Blood Sugar”,
-              Institute of Nutrigenetics
-            </p>
-          </div>
-          
-          
-          <div class="event">
-            <div class="meta">
-              <span class="date">September 2025</span>
-              <span class="tag">Expert Talk</span>
-            </div>
-            <p class="title">AI & Diabetes Management: An Introduction</p>
-            <p class="where">
-              International Summer School on AI for Diabetes Management,
-              UdG–Dexcom Chair for Advancing AI Use in Clinical Practice
-            </p>
-          </div>
-          
-          
-          <div class="event">
-            <div class="meta">
-              <span class="date">September 2025</span>
-              <span class="tag">Workshop</span>
-            </div>
-            <p class="title">T1D Simulator and Digital Twins for Personalized Care</p>
-            <p class="where">
-              International Summer School on AI for Diabetes Management,
-              UdG–Dexcom Chair
-            </p>
-          </div>
-          
-          
-          <div class="event">
-            <div class="meta">
-              <span class="date">July 2025</span>
-              <span class="tag">Mini Symposium</span>
-            </div>
-            <p class="title">Data-Based Digital Twins: From Twin Cohorts to Digital Twins</p>
-            <p class="where">
-              Mini Symposium: “Digital Twins to Transform Personalized Care in Diabetes”,
-              47th International Engineering in Medicine and Biology Conference (EMBC 2025)
-            </p>
-          </div>
-          
-          
-          <div class="event">
-            <div class="meta">
-              <span class="date">June 2025</span>
-              <span class="tag">Introductory Talk</span>
-            </div>
-            <p class="title">Introductory Talk on Artificial Intelligence in Diabetes Healthcare</p>
-            <p class="where">
-              Design Thinking Workshop,
-              Cátedra DEXCOM-UdG Artificial Intelligence in Diabetes
-            </p>
-          </div>
-          
-          
-          <div class="event">
-            <div class="meta">
-              <span class="date">July 2022</span>
-              <span class="tag">Oral Presentation</span>
-            </div>
-            <p class="title">Enhancing Predictive Models Thanks to Synthetic Data</p>
-            <p class="where">
-              44th International Engineering in Medicine and Biology Conference (EMBC 2022)
-            </p>
-          </div>
-          <!-- ===== END PAST EVENT BLOCKS ===== -->
-
-        <!-- ===== END PAST EVENT BLOCK ===== -->
-
-
-        <!-- 
-        ===== TO ADD A NEW PAST EVENT =====
-        1. Copy any START/END block above
-        2. Paste it here
-        3. Update date/title/type/location
-        -->
-
-
-      </div>
-    </div>
-
-  </main>
-
-</body>
-</html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Upcoming and past talks and workshops by Omer Mujahid on AI, digital twins and personalized healthcare."><title>Events &amp; Talks | Omer Mujahid</title><style>
+  :root{--paper:#f4f1e8;--paper-2:#eae6d9;--ink:#183c32;--ink-2:#315148;--muted:#606d62;--line:#b4bdab;--accent:#be583d;--cream:#fffdf7;--deep:#173a30;--max:1280px}
+  *,*::before,*::after{box-sizing:border-box} html{scroll-behavior:smooth;scroll-padding-top:6rem} body{margin:0;background:var(--paper);color:var(--ink);font-family:"Courier New",Courier,monospace;font-size:16px;line-height:1.65} a{color:inherit;text-underline-offset:4px} a:hover{text-decoration-thickness:2px} a:focus-visible{outline:3px solid var(--accent);outline-offset:4px} img{max-width:100%} [hidden]{display:none!important}
+  .wrap{width:min(var(--max),calc(100% - 80px));margin-inline:auto}.topline{background:var(--ink);color:#e8ede0;text-align:center;font-size:.72rem;letter-spacing:.13em;text-transform:uppercase;padding:.48rem 1rem}.topline span{color:#cddc9b}.topbar{border-bottom:1px solid var(--line);background:var(--paper)}.nav-inner{min-height:88px;display:flex;align-items:center;justify-content:space-between;gap:2rem}.brand{display:inline-flex;align-items:center;gap:.85rem;text-decoration:none}.brand-mark{display:grid;place-items:center;width:43px;height:43px;background:var(--ink);color:var(--paper);font-size:.9rem;font-weight:bold;letter-spacing:-.08em}.brand-name{display:block;font-family:Georgia,serif;font-weight:bold;font-size:1.2rem;line-height:1.1}.brand-sub{display:block;margin-top:.28rem;color:var(--muted);font-size:.65rem;letter-spacing:.08em;text-transform:uppercase}.nav{display:flex;align-items:center;gap:1.75rem;flex-wrap:wrap}.nav a{font-size:.81rem;font-weight:bold;text-decoration:none}.nav a:hover,.nav a[aria-current=page]{color:var(--accent)}.nav-contact{border:1px solid var(--ink);padding:.55rem .8rem}.nav-contact:hover{background:var(--ink);color:var(--cream)!important}
+  .hero{display:grid;grid-template-columns:minmax(0,1.17fr) minmax(320px,.83fr);min-height:530px;border-bottom:1px solid var(--line)}.hero-copy{padding:clamp(3.5rem,6vw,6.3rem) 4.2rem 4rem 0;display:flex;flex-direction:column;justify-content:center}.kicker,.section-label,.event-type,.pub-kicker{display:block;color:var(--accent);font-size:.75rem;font-weight:bold;letter-spacing:.12em;text-transform:uppercase}.kicker{margin:0 0 1.35rem}.hero h1{font-family:Georgia,'Times New Roman',serif;font-weight:normal;font-size:clamp(4.5rem,8.3vw,7.8rem);letter-spacing:-.065em;line-height:.88;margin:0}.hero h1 em{font-weight:normal;color:var(--accent)}.hero h1 .period{color:var(--ink)}.hero-intro{font-size:clamp(1rem,1.2vw,1.12rem);max-width:650px;margin:2rem 0 0;line-height:1.75}.hero-actions{display:flex;align-items:center;gap:1.25rem;flex-wrap:wrap;margin-top:2rem}.button{display:inline-flex;align-items:center;justify-content:center;min-height:48px;padding:.68rem 1.05rem;background:var(--ink);color:var(--cream);border:1px solid var(--ink);font-size:.84rem;font-weight:bold;text-decoration:none}.button:hover{background:var(--accent);border-color:var(--accent)}.button-ghost{background:transparent;color:var(--ink)}.button-ghost:hover{background:var(--ink);border-color:var(--ink);color:var(--cream)}
+  .hero-art{border-left:1px solid var(--line);padding:2.8rem 0 2.8rem 3rem;display:flex;align-items:center}.profile-sheet{width:100%;border:1px solid var(--ink);background:#dedfce;padding:12px;box-shadow:9px 9px 0 #aab8a6}.profile-window{position:relative;height:300px;overflow:hidden;background:var(--deep);color:#d6ddbf}.profile-window::before{content:"";position:absolute;inset:0;opacity:.18;background-image:linear-gradient(#98ae92 1px,transparent 1px),linear-gradient(90deg,#98ae92 1px,transparent 1px);background-size:32px 32px}.profile-window::after{content:"";position:absolute;inset:12px;border:1px solid rgba(231,239,217,.22);pointer-events:none}.profile-window img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center 35%;z-index:1}.monogram{position:absolute;inset:0;display:grid;place-items:center;font-family:Georgia,serif;font-size:clamp(8rem,14vw,13rem);letter-spacing:-.12em;line-height:1;opacity:.75}.profile-note{display:flex;justify-content:space-between;align-items:end;gap:1rem;padding:.85rem .15rem .15rem;font-size:.73rem;line-height:1.4}.profile-note strong{font-family:Georgia,serif;font-size:1.15rem;font-weight:normal;display:block}.profile-note .profile-meta{text-align:right;color:var(--muted)}
+  .ticker{display:flex;align-items:center;justify-content:space-between;gap:1rem;flex-wrap:wrap;padding:1.1rem 0;border-bottom:1px solid var(--line);font-size:.75rem;font-weight:bold;letter-spacing:.07em;text-transform:uppercase}.ticker span{color:var(--muted)}.ticker strong{font-weight:bold}.ticker .accent{color:var(--accent)}
+  .section{padding:5rem 0;border-bottom:1px solid var(--line)}.section-head{display:flex;justify-content:space-between;align-items:end;gap:2rem;margin-bottom:2.2rem}.section-head h2,.page-title,.contact-title{font-family:Georgia,serif;font-size:clamp(2.5rem,4.5vw,4.25rem);font-weight:normal;letter-spacing:-.045em;line-height:1.02;margin:.55rem 0 0}.section-head .section-intro{max-width:480px;margin:0;color:var(--muted);font-size:.9rem}.research-grid{display:grid;grid-template-columns:repeat(4,1fr);border-top:1px solid var(--ink);border-bottom:1px solid var(--ink)}.research-item{padding:1.6rem 1.45rem 1.6rem 0;min-height:170px}.research-item+.research-item{border-left:1px solid var(--line);padding-left:1.45rem}.research-item h3{font-family:Georgia,serif;font-weight:normal;font-size:1.4rem;line-height:1.18;margin:0 0 .8rem}.research-item p{font-size:.84rem;color:var(--muted);margin:0;line-height:1.7}.text-link{font-size:.84rem;font-weight:bold;text-decoration:underline;text-decoration-color:var(--accent);text-decoration-thickness:2px;text-underline-offset:5px}
+  .about-layout{display:grid;grid-template-columns:.8fr 1.2fr;gap:6rem}.about-copy{font-family:Georgia,serif;font-size:1.5rem;line-height:1.5;letter-spacing:-.015em;margin:1.8rem 0 0}.about-copy em{color:var(--accent)}.about-detail{font-size:.9rem;color:var(--ink-2);line-height:1.8}.facts-grid{display:grid;grid-template-columns:1fr 1fr;gap:2rem;margin-top:2.1rem}.fact-group h3{font-size:.76rem;letter-spacing:.1em;text-transform:uppercase;margin:0 0 .7rem;padding-bottom:.7rem;border-bottom:1px solid var(--ink)}.fact-list{list-style:none;margin:0;padding:0}.fact-list li{padding:.8rem 0;border-bottom:1px solid var(--line);font-size:.81rem;line-height:1.65}.fact-list strong{display:block;font-weight:bold}.fact-list span{color:var(--muted)}.awards-title{font-size:.76rem;letter-spacing:.1em;text-transform:uppercase;margin:2rem 0 .5rem}.awards-list{margin:0;padding-left:1.15rem;font-size:.82rem;color:var(--ink-2)}.awards-list li{margin:.38rem 0}
+  .events-callout{display:flex;align-items:center;justify-content:space-between;gap:2rem;padding:2.2rem 0}.events-callout h2{font-family:Georgia,serif;font-size:clamp(1.8rem,3vw,2.6rem);font-weight:normal;line-height:1.15;margin:.4rem 0}.events-callout p{margin:.5rem 0 0;color:var(--muted);font-size:.9rem}.contact-panel{background:var(--ink);color:var(--cream);padding:4rem;display:flex;justify-content:space-between;gap:3rem;align-items:end}.contact-panel .section-label{color:#e5a78f}.contact-title{max-width:650px}.contact-panel p{max-width:650px;color:#d1dfcf;margin:1rem 0 0}.contact-links{display:grid;gap:.65rem;font-size:.88rem;min-width:230px}.contact-links a{color:var(--cream)}.contact-links .address{color:#d1dfcf}.footer{padding:1.7rem 0 2rem;display:flex;justify-content:space-between;gap:1rem;flex-wrap:wrap;color:var(--muted);font-size:.75rem}.footer a{color:var(--ink)}
+  .page-header{padding:5rem 0 3rem;border-bottom:1px solid var(--ink);display:flex;justify-content:space-between;align-items:end;gap:3rem}.page-title{font-size:clamp(3.3rem,7vw,6.4rem)}.page-title em{font-weight:normal;color:var(--accent)}.page-deck{max-width:410px;color:var(--muted);margin:0 0 .3rem;font-size:.9rem;line-height:1.8}.page-section{padding:3.2rem 0 4rem;border-bottom:1px solid var(--line)}.page-section-header{display:flex;justify-content:space-between;align-items:baseline;gap:1rem;margin-bottom:1.6rem}.page-section-header h2{font-family:Georgia,serif;font-size:2.25rem;font-weight:normal;letter-spacing:-.035em;margin:0}.page-section-header p{font-size:.78rem;color:var(--muted);margin:0}.events-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:1rem}.event{border:1px solid var(--line);background:rgba(255,253,247,.45);padding:1.8rem;display:flex;flex-direction:column;align-items:flex-start;min-width:0}.event.feature{background:var(--ink);color:var(--cream);border-color:var(--ink)}.event-type{font-size:.7rem;color:var(--accent)}.event.feature .event-type{color:#e4a78d}.event-date{font-size:.83rem;font-weight:bold;margin:.85rem 0 1.25rem}.event h3{font-family:Georgia,serif;font-size:clamp(1.45rem,2.1vw,2.1rem);font-weight:normal;letter-spacing:-.025em;line-height:1.19;margin:0 0 1rem}.event-location,.event-description{font-size:.85rem;margin:0;color:var(--muted);line-height:1.7}.event.feature .event-location,.event.feature .event-description{color:#d1dfcf}.event-description{margin-top:.75rem}.event-link{margin-top:1.2rem;font-size:.8rem;font-weight:bold;text-decoration-color:var(--accent);text-decoration-thickness:2px;text-underline-offset:5px}.event.feature .event-link{color:var(--cream)}.event-archive{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));column-gap:3rem}.event-archive .event{display:block;background:transparent;border:0;border-top:1px solid var(--line);padding:1.35rem 0 1.7rem}.event-archive .event-date{margin:.4rem 0 .65rem}.event-archive .event h3{font-size:1.35rem;margin-bottom:.6rem}.event-archive .event-location{font-size:.82rem}.empty-events{padding:1rem 0;color:var(--muted);font-size:.85rem}
+  .publication-section{padding:3rem 0;border-bottom:1px solid var(--line);display:grid;grid-template-columns:260px 1fr;gap:3rem}.publication-section h2{font-family:Georgia,serif;font-size:2.15rem;font-weight:normal;letter-spacing:-.04em;line-height:1.1;margin:.55rem 0}.publication-section .publication-note{color:var(--muted);font-size:.78rem}.publications-list{counter-reset:publication;list-style:none;margin:0;padding:0;border-top:1px solid var(--line)}.publications-list li{counter-increment:publication;position:relative;padding:1.15rem 0 1.15rem 3rem;border-bottom:1px solid var(--line);font-size:.87rem;line-height:1.8}.publications-list li::before{content:counter(publication,decimal-leading-zero);position:absolute;left:0;top:1.15rem;color:var(--accent);font-weight:bold;font-size:.75rem}.publications-list em{font-family:Georgia,serif;font-size:1.02em}.pill{display:inline-block;color:var(--accent);font-size:.7rem;font-weight:bold;letter-spacing:.05em;text-transform:uppercase;padding:0 .3rem}
+  @media(max-width:900px){.wrap{width:min(100% - 48px,var(--max))}.nav{gap:.8rem}.hero{grid-template-columns:1.1fr .9fr}.hero-copy{padding-right:2rem}.hero-art{padding-left:2rem}.profile-window{height:260px}.research-grid{grid-template-columns:1fr 1fr}.research-item:nth-child(3){border-left:0;padding-left:0;border-top:1px solid var(--line)}.research-item:nth-child(4){border-top:1px solid var(--line)}.about-layout{gap:3rem}.publication-section{grid-template-columns:200px 1fr;gap:2rem}}
+  @media(max-width:680px){.wrap{width:calc(100% - 36px)}.topline{font-size:.65rem}.nav-inner{padding:1rem 0;display:block}.brand{margin-bottom:1rem}.nav{justify-content:flex-start;gap:.45rem 1rem}.nav a{font-size:.78rem}.nav-contact{border:0;padding:0}.nav-contact:hover{background:none;color:var(--accent)!important}.hero{grid-template-columns:1fr}.hero-copy{padding:3.7rem 0 2.6rem}.hero h1{font-size:clamp(4.1rem,17vw,6.2rem)}.hero-art{padding:1.3rem 0 2.5rem;border-left:0}.profile-window{height:260px}.section{padding:3.6rem 0}.section-head{display:block}.section-head .section-intro{margin:1rem 0 0}.research-grid{grid-template-columns:1fr 1fr}.research-item{min-height:0;padding:1.2rem .8rem 1.2rem 0}.research-item+.research-item{padding-left:.8rem}.research-item:nth-child(3){padding-left:0}.research-item h3{font-size:1.25rem}.research-item p{font-size:.79rem}.about-layout{grid-template-columns:1fr;gap:1.5rem}.facts-grid{gap:1.2rem}.events-callout{display:block}.events-callout .button{margin-top:1.2rem}.contact-panel{padding:2.2rem 1.4rem;display:block}.contact-links{margin-top:2rem}.page-header{padding:3.5rem 0 2rem;display:block}.page-deck{margin-top:1.2rem}.page-section{padding:2.5rem 0 3rem}.events-grid,.event-archive{grid-template-columns:1fr}.event{padding:1.4rem}.event-archive .event{padding-left:0}.publication-section{display:block;padding:2.5rem 0}.publications-list{margin-top:1.5rem}.page-section-header{display:block}.page-section-header p{margin-top:.4rem}.footer{display:block}.footer span{display:block;margin-top:.4rem}}
+  @media(max-width:400px){.facts-grid{grid-template-columns:1fr}.hero-actions{gap:.75rem}.hero-actions .button{font-size:.78rem}}
+  @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+</style></head>
+<body><div class="topline">Generative AI <span>·</span> Digital twins <span>·</span> Healthcare</div>
+      <header class="topbar"><div class="wrap nav-inner">
+      <a class="brand" href="index.html" aria-label="Omer Mujahid home"><span class="brand-mark" aria-hidden="true">OM.</span><span><span class="brand-name">Omer Mujahid</span><span class="brand-sub">AI · Digital Health</span></span></a>
+      <nav class="nav" aria-label="Main navigation"><a href="index.html">Home</a><a href="index.html#research">Research</a><a href="publications.html">Publications</a><a href="events.html" aria-current="page">Events</a><a href="index.html#contact" class="nav-contact">Contact</a></nav></div></header><main><div class="wrap"><header class="page-header"><div><span class="section-label">On the calendar</span><h1 class="page-title">Events <em>&amp;</em><br>talks.</h1></div><p class="page-deck">Workshops, lectures, and conversations on AI, digital twins, and personalized healthcare.</p></header>
+<section class="page-section"><div class="page-section-header"><h2>Coming up</h2><p>Join the conversation</p></div><div class="events-grid" data-upcoming><article class="event feature" data-sort="2026-12-10" data-end="2026-12-10"><span class="event-type">Workshop</span><p class="event-date">10 December 2026 · 16:00–18:00 CET</p><h3>From Population Models to Personalized Digital Twins</h3><p class="event-location">Google Developer Groups Girona · Edifici Narcís Monturiol, Girona, Spain</p><p class="event-description">A hands-on session on generative deep learning, transfer learning and a type 1 diabetes digital twin. Bring your laptop.</p><a class="event-link" href="https://gdg.community.dev/events/details/google-gdg-girona-presents-from-population-models-to-personalized-digital-twins-1/" target="_blank" rel="noopener noreferrer">Workshop details</a></article><article class="event" data-sort="2027-03-03" data-end="2027-03-06"><span class="event-type">Invited talk</span><p class="event-date">3–6 March 2027 · Conference dates</p><h3>Personalized metabolic prediction with GLP-1 receptor agonist therapy</h3><p class="event-location">ATTD 2027 · Paris, France</p><p class="event-description">Invited talk at the 20th International Conference on Advanced Technologies &amp; Treatments for Diabetes.</p><a class="event-link" href="https://attd2027.kenes.com/" target="_blank" rel="noopener noreferrer">Conference website</a></article></div><p class="empty-events" data-no-upcoming hidden>No upcoming events are listed at the moment.</p></section>
+<section class="page-section"><div class="page-section-header"><h2>Past events</h2><p>Talks, workshops &amp; presentations</p></div><div class="event-archive" data-archive><article class="event" data-sort="2026-10-31"><span class="event-type">Talk</span><p class="event-date">31 October 2026</p><h3>AI for personalized nutrition: some case studies</h3><p class="event-location">Institute of Nutrigenetics</p></article><article class="event" data-sort="2026-07-15"><span class="event-type">Workshop</span><p class="event-date">15 July 2026</p><h3>From Population Models to Personalized Digital Twins: Adapting AI Models to Individuals</h3><p class="event-location">2nd Summer School on AI in Diabetes Healthcare · University of Girona, Girona, Spain</p></article><article class="event" data-sort="2026-03-11"><span class="event-type">Oral presentation</span><p class="event-date">11–14 March 2026</p><h3>Building Data-Based Digital Twins in Diabetes with Deep Generative Models: Progress and Challenges</h3><p class="event-location">19th International Conference on Advanced Technologies &amp; Treatments for Diabetes (ATTD 2026) · Barcelona, Spain</p></article><article class="event" data-sort="2026-02-24"><span class="event-type">User group session</span><p class="event-date">24 February 2026</p><h3>Inaugural Requirements Elicitation Session for the Advanced Virtual Human Twin (VHT) Platform</h3><p class="event-location">European Virtual Human Twins (VHT) User Group · Brussels, Belgium / Online</p></article><article class="event" data-sort="2026-02-01"><span class="event-type">Invited lecture</span><p class="event-date">February 2026</p><h3>Artificial Intelligence in Precision Nutrition</h3><p class="event-location">International Conference on Precision Nutrition (Nutriome 2026) · Institute of Nutrigenetics</p></article><article class="event" data-sort="2025-12-01"><span class="event-type">CPD workshop</span><p class="event-date">December 2025</p><h3>Learning Representations for Biomedical Digital Twins using Generative AI</h3><p class="event-location">CECOS University</p></article><article class="event" data-sort="2025-10-01"><span class="event-type">Invited lecture</span><p class="event-date">October 2025</p><h3>Artificial Intelligence in Diabetes</h3><p class="event-location">Workshop on “AI and Nutrigenetics of Diabetes Mellitus: Beyond Blood Sugar” · Institute of Nutrigenetics</p></article><article class="event" data-sort="2025-09-01"><span class="event-type">Expert talk</span><p class="event-date">September 2025</p><h3>AI &amp; Diabetes Management: An Introduction</h3><p class="event-location">International Summer School on AI for Diabetes Management · UdG–Dexcom Chair for Advancing AI Use in Clinical Practice</p></article><article class="event" data-sort="2025-09-01"><span class="event-type">Workshop</span><p class="event-date">September 2025</p><h3>T1D Simulator and Digital Twins for Personalized Care</h3><p class="event-location">International Summer School on AI for Diabetes Management · UdG–Dexcom Chair</p></article><article class="event" data-sort="2025-07-01"><span class="event-type">Mini symposium</span><p class="event-date">July 2025</p><h3>Data-Based Digital Twins: From Twin Cohorts to Digital Twins</h3><p class="event-location">Mini Symposium: “Digital Twins to Transform Personalized Care in Diabetes” · 47th International Engineering in Medicine and Biology Conference (EMBC 2025)</p></article><article class="event" data-sort="2025-06-01"><span class="event-type">Introductory talk</span><p class="event-date">June 2025</p><h3>Introductory Talk on Artificial Intelligence in Diabetes Healthcare</h3><p class="event-location">Design Thinking Workshop · Cátedra DEXCOM-UdG Artificial Intelligence in Diabetes</p></article><article class="event" data-sort="2022-07-01"><span class="event-type">Oral presentation</span><p class="event-date">July 2022</p><h3>Enhancing Predictive Models Thanks to Synthetic Data</h3><p class="event-location">44th International Engineering in Medicine and Biology Conference (EMBC 2022)</p></article></div></section></div></main><footer class="wrap footer"><span>© <span data-year>2026</span> Omer Mujahid · Girona, Spain</span><span><a href="https://orcid.org/0000-0001-9694-9621" target="_blank" rel="noopener noreferrer">ORCID</a> &nbsp; / &nbsp; <a href="mailto:omer.mujahid@udg.edu">Email</a></span></footer><script>
+  document.querySelectorAll('[data-year]').forEach(el=>el.textContent=new Date().getFullYear());
+  const upcoming=document.querySelector('[data-upcoming]');
+  const archive=document.querySelector('[data-archive]');
+  if(upcoming && archive){
+    const parts=Object.fromEntries(new Intl.DateTimeFormat('en-GB',{timeZone:'Europe/Madrid',year:'numeric',month:'2-digit',day:'2-digit'}).formatToParts(new Date()).map(p=>[p.type,p.value]));
+    const today=`${parts.year}-${parts.month}-${parts.day}`;
+    [...upcoming.querySelectorAll('[data-end]')].forEach(event=>{
+      if(event.dataset.end<today){event.classList.remove('feature');archive.append(event);}
+    });
+    [...archive.querySelectorAll('[data-sort]')].sort((a,b)=>b.dataset.sort.localeCompare(a.dataset.sort)).forEach(event=>archive.append(event));
+    const empty=document.querySelector('[data-no-upcoming]');
+    if(empty && !upcoming.querySelector('.event'))empty.hidden=false;
+  }
+  if(location.protocol!=='file:')fetch('CV_Omer.pdf',{method:'HEAD'}).then(r=>{
+    if(!r.ok)document.querySelectorAll('[data-cv]').forEach(el=>el.hidden=true);
+  }).catch(()=>{});
+</script></body></html>
